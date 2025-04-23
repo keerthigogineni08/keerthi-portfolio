@@ -100,6 +100,7 @@
     background-color: #FF8C42;
     color: white;
     border-color: #FF8C42;
+    box-shadow: 0 0 12px rgba(255, 140, 66, 0.3);
   }
   
   /* Brand Section */
@@ -190,6 +191,7 @@
   
   .work-card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
   }
   
   .work-card img {
@@ -251,6 +253,11 @@
     color: #555;
     font-weight: 600;
   }
+
+  .testimonial + .testimonial {
+    margin-top: 2rem;
+  }
+  
   
   /* CTA */
   .cta {
@@ -306,6 +313,8 @@
     padding: 1.5rem;
     transition: transform 0.3s ease;
     border: 1px solid #f0eae3;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease forwards;
   }
   
   .skill-card:hover {
@@ -323,6 +332,83 @@
     color: #ff8c42;
     font-weight: bold;
   }
+  
+  .skill-card:nth-child(1) { animation-delay: 0.1s; }
+  .skill-card:nth-child(2) { animation-delay: 0.2s; }
+  .skill-card:nth-child(3) { animation-delay: 0.3s; }
+  .skill-card:nth-child(4) { animation-delay: 0.4s; }
+  .skill-card:nth-child(5) { animation-delay: 0.5s; }
+  
+  /* Sticky Image Styles */
+  .skills-showcase {
+    display: flex;
+    gap: 4rem;
+    align-items: flex-start;
+    margin: 6rem 0;
+  }
+  
+  .skills-sticky-img {
+    position: sticky;
+    top: 100px;
+    flex: 0 0 280px;
+    align-self: flex-start;
+  }
+  
+  .skills-sticky-img img {
+    width: 100%;
+    object-fit: contain;
+  }
+  
+  .skills-scroll {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  /* Animation Utility Classes */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeInSection {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fade-in {
+    opacity: 0;
+    animation: fadeInSection 0.6s ease forwards;
+  }
+  
+  
+  /* Logo Styling */
+
+  .logo {
+    font-size: 1.8rem;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+  }
+  
+  .logo:hover {
+    color: #FF8C42;
+    transform: scale(1.05);
+  }
+  
   
 
   /* Responsive tweaks */
@@ -369,6 +455,21 @@
     .hero-img {
         max-width: 280px;
     }
+
+    .skills-showcase {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .skills-sticky-img {
+        position: relative;
+        top: auto;
+        margin-bottom: 2rem;
+      }
+    
+      .logo {
+        font-size: 1.4rem;
+      }
       
   }
   
