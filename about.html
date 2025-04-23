@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About | Keerthi Gogineni</title>
+  <title>Keerthi Gogineni | Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -11,37 +11,73 @@
   <header class="navbar">
     <div class="logo">Keerthi Gogineni</div>
     <nav>
-      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
       <a href="works.html">Works</a>
       <a href="contact.html">Contact</a>
     </nav>
   </header>
 
-  <section class="about-page">
-    <span class="tag">ABOUT</span>
-    <h2>A deep love for minimal design, pixels & coffee</h2>
-    <div class="about-flex">
-        <img src="assets/about_me.png" alt="Illustration of Keerthi" />
-        <p>I thrive on finding the perfect balance between creativity and practicality, ensuring every website I create looks great and feels intuitive. My design mindset is grounded in storytelling, clean visuals, and impactful experiences.</p>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Turning Data Into Insightful Experiences</h1>
+      <p>
+        I'm Keerthi, a creatively-driven data scientist building smart, beautiful tools that turn messy data into meaningful stories — from mood-based music dashboards to real-time network health predictors.
+      </p>
+      <a class="button connect-btn" href="#">🔗 Connect with me!</a>
     </div>
-      
+    <div class="hero-img">
+      <img src="assets/Astronaut_illustrator.png" alt="Astronaut Illustration" style="max-width: 360px; width: 100%; height: auto;"/>
+    </div>
+  </section>
 
-    <div class="about-grid">
-      <div>
-        <h3>4 years</h3>
-        <p>Experience</p>
+  <!-- About Blurb -->
+  <section class="about-blurb">
+    <div class="about-icon">
+      <img src="assets/about_me.png" alt="About Me Illustration" style="max-width: 300px; height: auto;"/>
+    </div>
+    <div class="about-text">
+      <span class="tag">ABOUT ME</span>
+      <h2>Designing with Data & Heart</h2>
+      <p>
+        With dual CS degrees from MSU and 4+ years teaching and leading tech communities, I thrive at the crossroads of data, empathy, and design. I build systems that feel intuitive — and look great too.
+      </p>
+      <div class="stats">
+        <span><strong>5+ years</strong><br />Skill Experience</span>
+        <span><strong>10+</strong><br />Projects</span>
+        <span><strong>5+</strong><br />Clients</span>
+        <span><strong>54k+</strong><br />Followers</span>
       </div>
-      <div>
-        <h3>143+</h3>
-        <p>Projects</p>
-      </div>
-      <div>
-        <h3>64+</h3>
-        <p>Clients</p>
-      </div>
-      <div>
-        <h3>54k+</h3>
-        <p>Followers</p>
+    </div>
+  </section>
+
+  <!-- Skills & Tools -->
+  <section class="skills-section">
+    <span class="tag">SKILLS & TOOLS</span>
+    <h2 class="section-title">What skills does my experience and projects say I have?</h2>
+    <div class="skills-layout">
+      <img src="assets/skills-illustration.png" alt="Skills Illustration" class="skills-img" />
+      <div class="skills-cards">
+        <div class="skill-card">
+          <p>Working with Keerthi? A dream. She fine-tuned me using TensorFlow, PyTorch, Keras, and Scikit-learn to build Spotify mood maps and WiFi prediction models.</p>
+          <span>🧠 <strong>Machine Learning & AI</strong></span>
+        </div>
+        <div class="skill-card">
+          <p>Keerthi takes raw chaos and turns it into gold. With Pandas, NumPy, Tableau, and good ol’ regression, she wrangles data like a pro.</p>
+          <span>📊 <strong>Data Analytics & Visualization</strong></span>
+        </div>
+        <div class="skill-card">
+          <p>I’m Spark, Kafka, Hadoop, and Docker — the big guys. Keerthi builds scalable pipelines with Kubernetes orchestration and CI/CD to seal the deal.</p>
+          <span>🛠️ <strong>Big Data & Infrastructure</strong></span>
+        </div>
+        <div class="skill-card">
+          <p>I live in the cloud, and Keerthi’s my architect. She handles AWS EC2, S3, Lambda, and DynamoDB like a breeze.</p>
+          <span>☁️ <strong>Cloud Platforms & Services</strong></span>
+        </div>
+        <div class="skill-card">
+          <p>She doesn’t just build models — she builds apps. Django, React Native, Flutter, HTML/CSS, APIs — she prototypes like a boss.</p>
+          <span>💡 <strong>Creative Tech & Tools</strong></span>
+        </div>
       </div>
     </div>
   </section>
@@ -54,6 +90,6 @@
       <img src="assets/contact-illustration.png" alt="Call Illustration" style="width: 240px; max-width: 100%; margin-top: 2rem;" />
     </div>
   </section>
-  
+
 </body>
 </html>
