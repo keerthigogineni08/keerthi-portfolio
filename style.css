@@ -493,7 +493,8 @@
   }
 
   .contact-section {
-    margin: 6rem 0;
+    margin: 4rem 0;
+    padding: 2rem 0;
   }
   
   .contact-header {
@@ -509,10 +510,7 @@
   }
   
   .contact-layout {
-    display: flex;
-    gap: 4rem;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    align-items: center;
   }
   
   .contact-info {
@@ -537,28 +535,42 @@
   
   .contact-form input,
   .contact-form textarea {
+    background-color: #fff8f3; /* soft neutral like the rest of your site */
+    border: none;
     padding: 1rem;
-    border: 1px solid #ccc;
     border-radius: 12px;
     font-size: 1rem;
     font-family: inherit;
+    color: #111;   
   }
-  
   .contact-form textarea {
     resize: vertical;
-    min-height: 120px;
+    min-height: 120px; 
+  }
+
+  .contact-form input::placeholder,
+  .contact-form textarea::placeholder {
+    color: #999;
+    font-weight: 500;
+  }
+
+  .contact-section {
+    background-color: #fff3eb; /* or any pastel */
+    border-radius: 24px;
+    padding: 4rem;
+    margin: 6rem 0;
   }
   
   .button-dark {
+    width: 100%;
     background-color: #111;
-    color: #fff;
-    font-weight: 600;
     padding: 1rem;
-    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
     border-radius: 12px;
-    cursor: pointer;
-    transition: 0.3s;
   }
+  
   
   .button-dark:hover {
     background-color: #FF8C42;
