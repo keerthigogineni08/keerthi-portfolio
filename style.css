@@ -102,6 +102,17 @@
     border-color: #FF8C42;
     box-shadow: 0 0 12px rgba(255, 140, 66, 0.3);
   }
+
+  .section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #FF8C42;
+    margin-top: 1rem;
+    border-radius: 2px;
+  }
+  
   
   /* Brand Section */
   .brands {
@@ -142,9 +153,12 @@
   }
 
   .about-icon img {
+    max-width: 320px;
+    height: auto;
     transform: scale(1.05);
     transition: transform 0.3s ease;
   }
+  
   .about-icon img:hover {
     transform: scale(1.08);
   }
@@ -176,6 +190,27 @@
     margin-top: 2rem;
     font-weight: 600;
   }
+
+  .stat {
+    text-align: center;
+  }
+  
+  .stat-number {
+    font-size: 1.8rem;
+    font-weight: 800;
+  }
+  
+  .stat-label {
+    font-size: 1rem;
+    color: #555;
+  }
+
+  .stat-number:hover {
+    color: #FF8C42;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+  }
+  
   
   /* Skills Section */
   .skills-section {
@@ -183,10 +218,11 @@
   }
   
   .skills-header {
-    text-align: center;
-    max-width: 700px;
-    margin: 0 auto 2rem;
+    text-align: left;
+    margin-bottom: 2rem;
+    max-width: 100%;
   }
+  
   
   .skills-header img {
     margin: 1rem auto;
@@ -344,6 +380,7 @@
     color: #111;
     transition: all 0.3s ease;
     box-shadow: 6px 6px 0 #111;
+    margin-bottom: 1rem;
   }
   
   .skill-card:hover {
@@ -397,9 +434,11 @@
   }
 
   .skills-header {
+    text-align: left;
     margin-bottom: 2rem;
-    text-align: center;
+    max-width: 100%;
   }
+  
   
   .skills-sticky-img {
     flex: 0 0 280px;
