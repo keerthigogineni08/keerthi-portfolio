@@ -90,13 +90,14 @@
       gap: 1.5rem;
     }
     .gallery img {
-      width: 100%;
-      height: auto;
-      border-radius: 16px;
-      object-fit: cover;
-      aspect-ratio: 1 / 1;
-      transition: transform 0.3s ease;
+        width: 100%;
+        height: auto;
+        border-radius: 16px;
+        object-fit: contain;     /* ✅ No cutting */
+        aspect-ratio: unset;     /* ✅ Natural dimensions */
+        transition: transform 0.3s ease;
     }
+
     .gallery img:hover {
       transform: scale(1.03);
     }
@@ -138,28 +139,34 @@
   </section>
 
   <!-- Tech Experience -->
-  <section class="section">
+<section class="section">
     <div class="highlight-tag">TECH EXPERIENCE</div>
-    <h2 class="section-title">Making data speak louder than words</h2>
-    <div class="experience-grid">
-      <div class="exp-card">
-        <h4>👩‍🏫 TA – MTH, CSE, CMSE</h4>
-        <p>Guided 100s of students in math, Python, and data science. Made abstract concepts fun and digestible.</p>
-      </div>
-      <div class="exp-card">
-        <h4>🌱 RA – MSU Biology Lab</h4>
-        <p>Used Python & ML to help analyze phenotypic traits and convert raw images into crop insights.</p>
-      </div>
-      <div class="exp-card">
-        <h4>💡 Data Projects</h4>
-        <p>Spotify Mood Dashboard, WiFi Health Predictor, Fake News Detection — data meets design.</p>
-      </div>
-      <div class="exp-card">
-        <h4>📊 Internship & Research</h4>
-        <p>Built ETL pipelines, modeled user behavior, and created ML tools to improve business decisions.</p>
-      </div>
-    </div>
+    <div class="two-col" style="flex-direction: row-reverse;">
+      <img src="assets/women-mike.png" alt="Trophy Illustration" class="about-avatar" />
+      <div>
+        <h2 class="section-title">Making data speak louder than words</h2>
+        <div class="experience-grid">
+          <div class="exp-card">
+            <h4>👩‍🏫 TA – MTH, CSE, CMSE</h4>
+            <p>Guided 100s of students in math, Python, and data science. Made abstract concepts fun and digestible.</p>
+          </div>
+          <div class="exp-card">
+            <h4>🌱 RA – MSU Biology Lab</h4>
+            <p>Used Python & ML to help analyze phenotypic traits and convert raw images into crop insights.</p>
+          </div>
+          <div class="exp-card">
+            <h4>💡 Data Projects</h4>
+            <p>Spotify Mood Dashboard, WiFi Health Predictor, Fake News Detection — data meets design.</p>
+          </div>
+          <div class="exp-card">
+            <h4>📊 Internship & Research</h4>
+            <p>Built ETL pipelines, modeled user behavior, and created ML tools to improve business decisions.</p>
+          </div>
+        </div> <!-- experience-grid -->
+      </div> <!-- inner text column -->
+    </div> <!-- two-col -->
   </section>
+  
 
   <!-- Leadership & Awards -->
   <section class="section">
