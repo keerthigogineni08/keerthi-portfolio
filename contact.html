@@ -6,81 +6,6 @@
   <title>Contact | Keerthi Gogineni</title>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <style>
-    .contact-content {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 3rem;
-      margin-top: 3rem;
-    }
-
-    .contact-left img {
-      max-width: 280px;
-      height: auto;
-      object-fit: contain;
-      margin-top: 1.5rem;
-    }
-
-    .contact-right form {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      width: 100%;
-      max-width: 400px;
-    }
-
-    .contact-right input,
-    .contact-right textarea {
-      padding: 0.8rem;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      font-family: inherit;
-      resize: vertical;
-    }
-
-    .contact-right button {
-      padding: 0.8rem;
-      font-weight: bold;
-      border-radius: 8px;
-      border: none;
-      background-color: #ff8c42;
-      color: white;
-      cursor: pointer;
-    }
-
-    .cta {
-      text-align: center;
-      background-color: #fff7f1;
-      padding: 4rem 2rem;
-      margin-top: 4rem;
-      border-top: 1px solid #eee;
-    }
-
-    .cta h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
-
-    .cta .button {
-      padding: 0.8rem 1.5rem;
-      background-color: #ff8c42;
-      color: white;
-      font-weight: bold;
-      border-radius: 8px;
-      border: none;
-      display: inline-block;
-      margin-bottom: 1rem;
-      text-decoration: none;
-    }
-
-    .cta .cta-img img {
-      max-width: 260px;
-      height: auto;
-      margin-top: 2rem;
-    }
-  </style>
 </head>
 <body>
   <header class="navbar">
@@ -92,27 +17,36 @@
     </nav>
   </header>
 
-  <section class="contact-page">
-    <span class="tag">INFORMATION</span>
-    <h2>We would love to hear from you!</h2>
-    <div class="contact-content">
-      <div class="contact-left">
-        <p><strong>Email:</strong> keerthichowdarygogineni@gmail.com</p>
-        <p><strong>Phone:</strong> (520) 991-2767</p>
-        <div class="socials">Instagram / LinkedIn / Twitter</div>
+  <!-- Contact Section -->
+  <section class="contact-section fade-in">
+    <div class="contact-header">
+      <span class="tag">INFORMATION</span>
+      <h2 class="section-title">We would love to hear from you!</h2>
+      <p class="contact-subtitle">
+        Whether you have a question, want to inquire about services, or just want to say hello — feel free to reach out to me below.
+      </p>
+    </div>
+
+    <div class="contact-layout">
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <p><strong>S:</strong> Instagram / LinkedIn / Twitter</p>
+        <p><strong>E:</strong> keerthichowdarygogineni@gmail.com</p>
+        <p><strong>P:</strong> (520) 991-2767</p>
         <img src="assets/contact-illustration.png" alt="Contact Illustration" />
       </div>
-      <div class="contact-right">
-        <form>
-          <input type="text" name="name" placeholder="Your Name" required />
-          <input type="email" name="email" placeholder="Your Email" required />
-          <textarea name="message" placeholder="Your Message" required rows="4"></textarea>
-          <button type="submit">Send Message</button>
-        </form>
-      </div>
+
+      <!-- Contact Form -->
+      <form class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="button-dark">Send Message</button>
+      </form>
     </div>
   </section>
 
+  <!-- CTA -->
   <section class="cta fade-in">
     <h2>Time to Shine! Drop a line!</h2>
     <a class="button" href="works.html">🧡 See My Work</a>
