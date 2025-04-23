@@ -308,30 +308,35 @@
   
   .skill-card {
     background-color: white;
-    border-radius: 16px;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
-    padding: 1.5rem;
-    transition: transform 0.3s ease;
+    border-radius: 20px; /* softer, rounder corners */
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05); /* stronger depth */
+    padding: 2rem; /* more breathing room */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 1px solid #f0eae3;
     opacity: 0;
     animation: fadeInUp 0.8s ease forwards;
   }
   
   .skill-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-6px); /* smooth lift on hover */
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08); /* glow on hover */
   }
   
   .skill-card p {
     margin-bottom: 1rem;
-    font-size: 0.95rem;
+    font-size: 1rem;
+    line-height: 1.6; /* better readability */
     color: #333;
   }
   
   .skill-card span {
-    font-size: 0.95rem;
+    font-size: 1rem;
     color: #ff8c42;
     font-weight: bold;
+    display: block;
+    margin-top: 0.5rem;
   }
+  
   
   .skill-card:nth-child(1) { animation-delay: 0.1s; }
   .skill-card:nth-child(2) { animation-delay: 0.2s; }
