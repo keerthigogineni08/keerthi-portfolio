@@ -287,5 +287,22 @@
     .testimonial-list {
       padding: 0 1rem;
     }
+
+    .about-flex {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        margin: 4rem 0;
+        text-align: left;
+      }
+      
+      .about-flex img {
+        max-width: 280px;
+        height: auto;
+        object-fit: contain;
+      }
+      
   }
   
