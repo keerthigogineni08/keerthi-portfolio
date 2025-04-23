@@ -139,6 +139,11 @@
     display: inline-block;
     margin-bottom: 0.8rem;
   }
+
+  .section-title {
+    margin-top: 0.8rem;
+  }
+  
   
   .stats {
     display: flex;
@@ -307,35 +312,51 @@
   }
   
   .skill-card {
-    background-color: white;
-    border-radius: 20px; /* softer, rounder corners */
-    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05); /* stronger depth */
-    padding: 2rem; /* more breathing room */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid #f0eae3;
-    opacity: 0;
-    animation: fadeInUp 0.8s ease forwards;
+    background-color: #fff8f3;
+    border: 2px solid #111;
+    border-radius: 20px;
+    padding: 2rem;
+    position: relative;
+    color: #111;
+    transition: all 0.3s ease;
+    box-shadow: 6px 6px 0 #111;
   }
   
   .skill-card:hover {
-    transform: translateY(-6px); /* smooth lift on hover */
-    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08); /* glow on hover */
+    background-color: #fff1e6;
+    transform: translate(-2px, -2px);
+    box-shadow: 8px 8px 0 #111;
   }
   
   .skill-card p {
-    margin-bottom: 1rem;
     font-size: 1rem;
-    line-height: 1.6; /* better readability */
-    color: #333;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
   }
   
   .skill-card span {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     font-size: 1rem;
-    color: #ff8c42;
-    font-weight: bold;
-    display: block;
-    margin-top: 0.5rem;
+    font-weight: 700;
   }
+  
+  .skill-card .end-icon {
+    margin-left: auto;
+  }
+
+  .skill-card span img {
+    width: 24px;
+    height: 24px;
+    margin-right: 0.5rem;
+  }
+  
+  .skill-card span .end-icon {
+    margin-left: auto;
+    width: 20px;
+  }
+  
   
   
   .skill-card:nth-child(1) { animation-delay: 0.1s; }
@@ -464,17 +485,21 @@
     .skills-showcase {
         flex-direction: column;
         align-items: center;
-      }
+    }
     
-      .skills-sticky-img {
+    .skills-sticky-img {
         position: relative;
         top: auto;
         margin-bottom: 2rem;
-      }
+    }
     
-      .logo {
+    .logo {
         font-size: 1.4rem;
-      }
+    }
+
+    .skills-sticky-img {
+        max-width: 200px;
+    }
       
   }
   
