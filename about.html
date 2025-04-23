@@ -9,25 +9,21 @@
   <style>
     .section {
       padding: 5rem 0;
-      border-bottom: 1px solid #eee;
+      border-bottom: 1px solid #ccc; /* darkened divider */
     }
-
     .section:last-of-type {
       border: none;
     }
-
     .section-title {
       font-size: 2rem;
       margin-bottom: 1rem;
     }
-
     .section-subtext {
       max-width: 700px;
       font-size: 1.05rem;
       color: #444;
       line-height: 1.7;
     }
-
     .two-col {
       display: flex;
       align-items: center;
@@ -35,12 +31,14 @@
       flex-wrap: wrap;
       gap: 3rem;
     }
-
     .about-avatar {
-      max-width: 320px;
+      max-width: 380px;
+      max-height: 420px; /* height limit for very tall images */
+      width: 100%;
+      object-fit: cover; /* maintains visual balance */
+      aspect-ratio: 1 / 1; /* consistent shape */
       border-radius: 20px;
     }
-
     .highlight-tag {
       background-color: #f5d6c6;
       color: #111;
@@ -51,13 +49,11 @@
       display: inline-block;
       margin-bottom: 1rem;
     }
-
     .experience-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 2rem;
     }
-
     .exp-card {
       background: white;
       border: 1px solid #eee;
@@ -66,48 +62,39 @@
       box-shadow: 0 2px 10px rgba(0,0,0,0.03);
       transition: all 0.3s ease;
     }
-
     .exp-card:hover {
       transform: translateY(-4px);
       box-shadow: 0 4px 14px rgba(0,0,0,0.06);
     }
-
     .exp-card h4 {
       margin-bottom: 0.5rem;
       font-size: 1.1rem;
     }
-
     .exp-card p {
       font-size: 0.95rem;
       color: #333;
     }
-
     .gallery {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       gap: 1.5rem;
     }
-
     .gallery img {
       width: 100%;
       border-radius: 16px;
       transition: transform 0.3s ease;
     }
-
     .gallery img:hover {
       transform: scale(1.03);
     }
-
     .cta-footer {
       text-align: center;
       padding: 5rem 0;
     }
-
     .cta-footer h2 {
       font-size: 2rem;
       margin-bottom: 1rem;
     }
-
     .cta-footer .button {
       margin-top: 1rem;
     }
