@@ -6,6 +6,118 @@
   <title>Contact | Keerthi Gogineni</title>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Manrope', sans-serif;
+      background-color: #fff6f0;
+      color: #111;
+      margin: 0;
+      padding: 0;
+    }
+
+    .contact-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 3rem;
+      padding: 6rem 3rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .contact-info {
+      flex: 1;
+      min-width: 260px;
+    }
+
+    .contact-info p {
+      font-size: 1rem;
+      line-height: 1.8;
+    }
+
+    .contact-info a {
+      color: #111;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .contact-info a:hover {
+      color: #ff8c42;
+    }
+
+    .contact-info img {
+      margin-top: 2rem;
+      max-width: 180px;
+    }
+
+    .contact-form {
+      flex: 1.2;
+      min-width: 300px;
+    }
+
+    .contact-form h2 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .contact-form p {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 2rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 1rem;
+      border-radius: 12px;
+      border: none;
+      background-color: #fff2e9;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      font-family: inherit;
+      color: #111;
+    }
+
+    .contact-form input::placeholder,
+    .contact-form textarea::placeholder {
+      color: #888;
+      font-weight: 500;
+    }
+
+    .contact-form textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .contact-form button {
+      background-color: #111;
+      color: #fff;
+      padding: 1rem;
+      width: 100%;
+      border: none;
+      border-radius: 12px;
+      font-weight: 700;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: #ff8c42;
+    }
+
+    @media (max-width: 768px) {
+      .contact-wrapper {
+        flex-direction: column;
+        padding: 3rem 1.5rem;
+      }
+      .contact-form h2 {
+        font-size: 2rem;
+      }
+    }
+  </style>
 </head>
 <body>
   <header class="navbar">
@@ -17,47 +129,25 @@
     </nav>
   </header>
 
-  <!-- Contact Section -->
-  <section class="contact-section fade-in">
-    <div class="contact-layout">
-      <!-- Contact Info (Left Side) -->
-      <div class="contact-info">
-        <p><strong>E:</strong> <a href="mailto:keerthichowdarygogineni@gmail.com">keerthichowdarygogineni@gmail.com</a></p>
-        <p><strong>P:</strong> <a href="tel:+15209912767">(520) 991-2767</a></p>
-        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/keerthi-gogineni/" target="_blank">keerthi-gogineni</a></p>
-        <p><strong>GitHub:</strong> <a href="https://github.com/keerthigogineni08" target="_blank">keerthigogineni08</a></p>
-        <img src="assets/contact-illustration.png" alt="Contact Illustration" />
-      </div>
-
-      <!-- Contact Form (Right Side) -->
-      <form class="contact-form">
-        <div class="contact-header">
-          <span class="tag">INFORMATION</span>
-          <h2 class="section-title">We would love to hear from you!</h2>
-          <p class="contact-subtitle">
-            Whether you have a question, want to inquire about services, or just want to say hello — feel free to reach out to me below.
-          </p>
-        </div>
-
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit" class="button-dark">Send Message</button>
-      </form>
+  <section class="contact-wrapper">
+    <!-- Contact Info -->
+    <div class="contact-info">
+      <p><strong>Email:</strong> <a href="mailto:keerthichowdarygogineni@gmail.com">keerthichowdarygogineni@gmail.com</a></p>
+      <p><strong>Phone:</strong> <a href="tel:+15209912767">(520) 991-2767</a></p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/keerthi-gogineni/" target="_blank">keerthi-gogineni</a></p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/keerthigogineni08" target="_blank">keerthigogineni08</a></p>
+      <img src="assets/contact-illustration.png" alt="Contact Illustration" />
     </div>
-  </section>
 
-  <!-- CTA Section -->
-  <section class="cta fade-in">
-    <h2>Time to Shine! Drop a line!</h2>
-    <a class="button" href="works.html">🧡 See My Work</a>
-    <div class="socials">
-      <a href="https://www.linkedin.com/in/keerthi-gogineni/" target="_blank">LinkedIn</a> /
-      <a href="https://github.com/keerthigogineni08" target="_blank">GitHub</a>
-    </div>
-    <div class="cta-img">
-      <img src="assets/mailbox_character.png" alt="Call Illustration" />
-    </div>
+    <!-- Contact Form -->
+    <form class="contact-form">
+      <h2>We would love to hear from you!</h2>
+      <p>Whether you have a question, want to inquire about services, or just want to say hello — feel free to reach out to me below.</p>
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
   </section>
 </body>
 </html>
