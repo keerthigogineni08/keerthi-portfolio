@@ -29,32 +29,41 @@
     .contact-info {
       flex: 1;
       min-width: 260px;
+      padding-top: 1rem;
     }
 
     .contact-info p {
-      font-size: 1.05rem;
-      line-height: 1.8;
-      font-weight: 600;
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+      line-height: 1.6;
+      font-weight: 500;
+      color: #222;
+    }
+
+    .contact-info strong {
+      font-weight: 700;
+      color: #111;
     }
 
     .contact-info a {
-      color: #111;
-      text-decoration: none;
-      font-weight: 600;
+      color: #ff8c42;
+      font-weight: 700;
+      text-decoration: underline;
+      transition: 0.2s ease;
     }
 
     .contact-info a:hover {
-      color: #ff8c42;
+      color: #e15f00;
     }
 
     .contact-info img {
-        margin-top: 2rem;
-        width: 100%;
-        max-width: 240px;
-        height: auto;
-        object-fit: contain;
+      margin-top: 2.5rem;
+      display: block;
+      width: 100%;
+      max-width: 260px;
+      height: auto;
+      object-fit: contain;
     }
-
 
     .contact-form {
       flex: 1.2;
@@ -148,13 +157,13 @@
       <p><strong>Phone:</strong> <a href="tel:+15209912767">(520) 991-2767</a></p>
       <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/keerthi-gogineni/" target="_blank">keerthi-gogineni</a></p>
       <p><strong>GitHub:</strong> <a href="https://github.com/keerthigogineni08" target="_blank">keerthigogineni08</a></p>
-      <img src="assets/contact-illustration.png" alt="Contact Illustration" />
+      <img src="assets/mailbox_character.png" alt="Contact Illustration" />
     </div>
 
     <!-- Contact Form -->
     <form class="contact-form">
       <h2>I would love to hear from you!</h2>
-      <p>Whether you have a question, want to inquire about my projects, or just want to say hello — feel free to reach out to me below. or send me an email!</p>
+      <p>Whether you have a question, want to inquire about my projects, or just want to say hello — feel free to reach out to me below. Or send me an email!</p>
       <input type="text" name="name" placeholder="Your Name" required />
       <input type="email" name="email" placeholder="Your Email" required />
       <textarea name="message" placeholder="Your Message" required></textarea>
