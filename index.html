@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Navbar -->
   <header class="navbar">
     <div class="logo">Keerthi Gogineni</div>
     <nav>
@@ -28,25 +27,14 @@
       <a class="button connect-btn" href="#">🔗 Connect with me!</a>
     </div>
     <div class="hero-img">
-      <img src="assets/Astronaut_illustrator.png" alt="Astronaut Illustration" />
-    </div>
-  </section>
-
-  <!-- Brands Section -->
-  <section class="brands">
-    <div class="brand-logos">
-      <span>🌀 RotaShow</span>
-      <span>🌊 waves</span>
-      <span>⚡ velocity 9</span>
-      <span>🔔 goldlines</span>
-      <span>🧡 travelers.</span>
+      <img src="assets/Astronaut_illustrator.png" alt="Astronaut Illustration" style="max-width: 360px; width: 100%; height: auto;"/>
     </div>
   </section>
 
   <!-- About Blurb -->
   <section class="about-blurb">
     <div class="about-icon">
-      <img src="assets/about_me.png" alt="About Me Illustration" />
+      <img src="assets/about_me.png" alt="About Me Illustration" style="max-width: 300px; height: auto;"/>
     </div>
     <div class="about-text">
       <span class="tag">ABOUT ME</span>
@@ -65,92 +53,36 @@
 
   <!-- Skills & Tools -->
   <section class="skills-section">
-    <div class="skills-header">
-      <span class="tag">SKILLS & TOOLS</span>
-      <h2>What skills does my experience and projects say I have?</h2>
-      <img src="assets/skills_image.png" alt="Skills Illustration" />
-    </div>
-    <div class="skills-cards">
-      <div class="skill-card">
-        <p>
-          Working with Keerthi? A dream. She fine-tuned me using TensorFlow, PyTorch, Keras, and Scikit-learn to build Spotify mood maps and WiFi prediction models. I’ve never felt more optimized — thanks to XGBoost, LightGBM, and even OpenCV when needed.
-        </p>
-        <span class="skill-tag">🧠 Machine Learning & AI</span>
+    <div class="skills-flex">
+      <div class="skills-left">
+        <span class="tag">SKILLS & TOOLS</span>
+        <h2>What skills does my experience and projects say I have?</h2>
+        <img src="assets/skills_image.png" alt="Skills Illustration" style="max-width: 220px; margin-top: 1rem;"/>
       </div>
-      <div class="skill-card">
-        <p>
-          Keerthi takes raw chaos and turns it into gold. With Pandas, NumPy, Tableau, and good ol’ regression, she wrangles data like a pro. PCA? A/B testing? Please, that’s her playground.
-        </p>
-        <span class="skill-tag">📊 Data Analytics & Visualization</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- Selected Works -->
-  <section class="works">
-    <div class="works-header">
-      <span class="tag">SELECTED WORKS</span>
-      <h2>Partnered with inspiring collaborators and brands.</h2>
-    </div>
-    <div class="works-grid">
-      <div class="work-card">
-        <img src="assets/placeholder5.png" alt="Project 1" />
-        <div class="work-info">
-          <h3>Trinfolio</h3>
-          <span>2023</span>
+      <div class="skills-right">
+        <div class="skills-cards">
+          <div class="skill-card">
+            <p>Working with Keerthi? A dream. She fine-tuned me using TensorFlow, PyTorch, Keras, and Scikit-learn to build Spotify mood maps and WiFi prediction models. I’ve never felt more optimized — thanks to XGBoost, LightGBM, and even OpenCV when needed.</p>
+            <span class="skill-tag">🧠 Machine Learning & AI</span>
+          </div>
+          <div class="skill-card">
+            <p>Keerthi takes raw chaos and turns it into gold. With Pandas, NumPy, Tableau, and good ol’ regression, she wrangles data like a pro. PCA? A/B testing? Please, that’s her playground.</p>
+            <span class="skill-tag">📊 Data Analytics & Visualization</span>
+          </div>
+          <div class="skill-card">
+            <p>I’m Spark, Kafka, Hadoop, and Docker — the big guys. Keerthi builds data pipelines that flow smooth and scale fast, with Kubernetes orchestration and CI/CD to seal the deal.</p>
+            <span class="skill-tag">📦 Big Data & Infrastructure</span>
+          </div>
+          <div class="skill-card">
+            <p>I live in the cloud, and Keerthi’s my architect. She handles AWS EC2, S3, Lambda, DynamoDB like a breeze. Azure? Yeah, she’s fluent there too.</p>
+            <span class="skill-tag">☁️ Cloud Platforms & Services</span>
+          </div>
+          <div class="skill-card">
+            <p>Keerthi doesn’t just build models — she builds real things. From Django, React Native, and Flutter to HTML/CSS and APIs, she’s turned ideas into apps, dashboards, and live prototypes that speak for themselves.</p>
+            <span class="skill-tag">🎨 Creative Tech & Tools</span>
+          </div>
         </div>
       </div>
-      <div class="work-card">
-        <img src="assets/placeholder6.png" alt="Project 2" />
-        <div class="work-info">
-          <h3>Framer Developer</h3>
-          <span>2023</span>
-        </div>
-      </div>
-      <div class="work-card">
-        <img src="assets/placeholder7.png" alt="Project 3" />
-        <div class="work-info">
-          <h3>Developer Portfolio</h3>
-          <span>2023</span>
-        </div>
-      </div>
-      <div class="work-card">
-        <img src="assets/placeholder8.png" alt="Project 4" />
-        <div class="work-info">
-          <h3>Designer Portfolio</h3>
-          <span>2023</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Testimonials -->
-  <section class="testimonials">
-    <span class="tag">MY CLIENTS</span>
-    <h2>What clients say about me?</h2>
-    <div class="testimonial-list">
-      <div class="testimonial">
-        <p>"I couldn't be happier. Trin took the time to understand our brand and objectives, and the result was a stunning website that perfectly captures our vision."</p>
-        <span><strong>John Smith</strong>, FitRevolution CEO</span>
-      </div>
-      <div class="testimonial">
-        <p>"The attention to detail and visually captivating design exceeded our expectations. Our website has received numerous compliments from clients and stakeholders."</p>
-        <span><strong>Sarah Johnson</strong>, Founder of CreativeSpark</span>
-      </div>
-      <div class="testimonial">
-        <p>"The design perfectly blends aesthetics with functionality. The team at Trin Agency was highly collaborative, transparent, and efficient throughout the process."</p>
-        <span><strong>David Williams</strong>, CEO of Apex Builders</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer CTA -->
-  <section class="cta">
-    <h2>Time to Shine! Drop a line!</h2>
-    <a class="button" href="works.html">🧡 See My Work</a>
-    <div class="socials">Instagram / LinkedIn / Twitter</div>
-    <div class="cta-img">
-      <img src="assets/connect_image.png" alt="Call Illustration" />
     </div>
   </section>
 </body>
