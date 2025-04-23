@@ -1,0 +1,291 @@
+/* Reset & Base Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Manrope', sans-serif;
+    background-color: #FFF8F3;
+    color: #111;
+    line-height: 1.6;
+    padding: 0 2rem;
+  }
+  
+  img {
+    max-width: 100%;
+    display: block;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+    font-weight: 600;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    margin-left: 1.5rem;
+    color: #111;
+    transition: 0.3s;
+  }
+  
+  .navbar a:hover {
+    color: #FF8C42;
+  }
+  
+  /* Hero */
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4rem 0;
+    flex-wrap: wrap;
+  }
+  
+  .hero-text {
+    max-width: 550px;
+  }
+  
+  .hero h1 {
+    font-size: 2.75rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .button {
+    padding: 0.8rem 1.6rem;
+    border-radius: 12px;
+    border: 1.5px solid #111;
+    background-color: transparent;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    color: #111;
+    transition: 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #FF8C42;
+    color: white;
+    border-color: #FF8C42;
+  }
+  
+  /* Brand Section */
+  .brands {
+    text-align: center;
+    margin: 3rem 0;
+    font-size: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    color: #555;
+  }
+  
+  /* About Blurb */
+  .about-blurb {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5rem 0;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .about-text {
+    max-width: 550px;
+  }
+  
+  .tag {
+    background-color: #f5d6c6;
+    color: #111;
+    font-size: 0.8rem;
+    padding: 0.3rem 0.8rem;
+    border-radius: 999px;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 0.8rem;
+  }
+  
+  .stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+    font-weight: 600;
+  }
+  
+  /* Skills Section */
+  .skills-section {
+    margin: 4rem 0;
+  }
+  
+  .skills-header {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 2rem;
+  }
+  
+  .skills-header img {
+    margin: 1rem auto;
+    width: 120px;
+  }
+  
+  .skills-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+  
+  .skill-card {
+    background: white;
+    border: 1.5px solid #ddd;
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+    transition: transform 0.3s ease;
+  }
+  
+  .skill-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .skill-tag {
+    display: block;
+    margin-top: 1rem;
+    font-weight: 700;
+    color: #FF8C42;
+  }
+  
+  /* Selected Works Section */
+  .works {
+    margin: 5rem 0;
+  }
+  
+  .works-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+  
+  .works-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+  
+  .work-card {
+    background-color: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .work-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .work-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .work-info {
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .work-info h3 {
+    margin-bottom: 0.3rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  
+  .work-info span {
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  /* Testimonials */
+  .testimonials {
+    background-color: #fff3eb;
+    padding: 4rem 2rem;
+    border-radius: 20px;
+    margin: 6rem 0;
+    text-align: center;
+  }
+  
+  .testimonial-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 800px;
+    margin: 2rem auto 0 auto;
+  }
+  
+  .testimonial {
+    background-color: white;
+    padding: 1.5rem 2rem;
+    border-radius: 16px;
+    border: 1.5px solid #eee;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+    text-align: left;
+  }
+  
+  .testimonial p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .testimonial span {
+    font-size: 0.9rem;
+    color: #555;
+    font-weight: 600;
+  }
+  
+  /* CTA */
+  .cta {
+    text-align: center;
+    margin: 6rem 0 3rem;
+  }
+  
+  .cta-img img {
+    margin: 2rem auto;
+    width: 120px;
+  }
+  
+  .socials {
+    font-size: 0.95rem;
+    color: #555;
+    margin-top: 0.5rem;
+  }
+  
+  /* Responsive tweaks */
+  @media (max-width: 768px) {
+    .hero, .about-blurb {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .navbar {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .testimonial-list {
+      padding: 0 1rem;
+    }
+  }
+  
