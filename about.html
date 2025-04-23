@@ -9,7 +9,7 @@
   <style>
     .section {
       padding: 5rem 0;
-      border-bottom: 1px solid #ccc; /* darkened divider */
+      border-bottom: 1px solid #bbb; /* darker divider */
     }
     .section:last-of-type {
       border: none;
@@ -32,12 +32,17 @@
       gap: 3rem;
     }
     .about-avatar {
-      max-width: 380px;
-      max-height: 420px; /* height limit for very tall images */
+      max-width: 420px;
+      max-height: 440px;
       width: 100%;
-      object-fit: cover; /* maintains visual balance */
-      aspect-ratio: 1 / 1; /* consistent shape */
+      height: auto;
+      object-fit: cover;
+      aspect-ratio: 1 / 1;
       border-radius: 20px;
+    }
+    .two-col .text-col {
+      flex: 1;
+      padding-left: 1rem;
     }
     .highlight-tag {
       background-color: #f5d6c6;
@@ -81,7 +86,10 @@
     }
     .gallery img {
       width: 100%;
+      height: auto;
       border-radius: 16px;
+      object-fit: cover;
+      aspect-ratio: 1 / 1;
       transition: transform 0.3s ease;
     }
     .gallery img:hover {
