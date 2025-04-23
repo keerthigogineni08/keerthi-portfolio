@@ -7,6 +7,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
+
+</body>
 <body>
   <header class="navbar">
     <div class="logo">Keerthi Gogineni</div>
@@ -36,7 +38,7 @@
     <div class="about-icon">
       <img src="assets/about_me.png" alt="About Me Illustration" />
     </div>
-    <div class="about-text">
+    <div class="about-text fade-in">
       <span class="tag">ABOUT ME</span>
       <h2>Designing with Data & Heart</h2>
       <p>
@@ -53,13 +55,23 @@
 
 
   <!-- Skills & Tools -->
-  <hr style="margin: 4rem 0; border: none; border-top: 2px solid #ddd;" />
-  <section class="skills-showcase fade-in">
+<hr style="margin: 4rem 0; border: none; border-top: 2px solid #ddd;" />
+
+<section class="skills-showcase fade-in">
+  <!-- Title block -->
+  <div class="skills-header">
     <span class="tag">SKILLS & TOOLS</span>
     <h2 class="section-title">What skills does my experience & projects say I have?</h2>
+  </div>
+
+  <!-- Side-by-side layout -->
+  <div class="skills-layout">
+    <!-- Image on the left -->
     <div class="skills-sticky-img">
       <img src="assets/skills-illustration.png" alt="Skills Illustration" />
     </div>
+
+    <!-- Skill cards on the right -->
     <div class="skills-scroll">
       <div class="skill-card">
         <p>Working with Keerthi? A dream. She fine-tuned me using TensorFlow, PyTorch, Keras, and Scikit-learn to build Spotify mood maps and WiFi prediction models.</p>
@@ -69,6 +81,7 @@
           <img src="assets/star-icon.png" class="end-icon" alt="Star" />
         </span>
       </div>
+
       <div class="skill-card">
         <p>Keerthi takes raw chaos and turns it into gold. With Pandas, NumPy, Tableau, and good ol’ regression, she wrangles data like a pro.</p>
         <span>
@@ -77,6 +90,7 @@
           <img src="assets/star-icon.png" class="end-icon" alt="Star" />
         </span>
       </div>
+
       <div class="skill-card">
         <p>I’m Spark, Kafka, Hadoop, and Docker — the big guys. Keerthi builds scalable pipelines with Kubernetes orchestration and CI/CD to seal the deal.</p>
         <span>
@@ -85,6 +99,7 @@
           <img src="assets/star-icon.png" class="end-icon" alt="Star" />
         </span>
       </div>
+
       <div class="skill-card">
         <p>I live in the cloud, and Keerthi’s my architect. She handles AWS EC2, S3, Lambda, and DynamoDB like a breeze.</p>
         <span>
@@ -93,6 +108,7 @@
           <img src="assets/star-icon.png" class="end-icon" alt="Star" />
         </span>
       </div>
+
       <div class="skill-card">
         <p>She doesn’t just build models — she builds apps. Django, React Native, Flutter, HTML/CSS, APIs — she prototypes like a boss.</p>
         <span>
@@ -101,8 +117,11 @@
           <img src="assets/star-icon.png" class="end-icon" alt="Star" />
         </span>
       </div>
+
     </div>
-  </section>
+  </div>
+</section>
+
 
   <section class="cta fade-in">
     <h2>Time to Shine! Drop a line!</h2>
