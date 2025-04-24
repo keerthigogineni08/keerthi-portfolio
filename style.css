@@ -11,7 +11,7 @@
     color: #111;
     line-height: 1.6;
     padding: 0 4rem;
-  }
+}
   
   img {
     max-width: 100%;
@@ -23,9 +23,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 1.5rem 0;
     font-weight: 600;
   }
+  
   
   .navbar a {
     text-decoration: none;
@@ -637,6 +640,11 @@
     color: #FF8C42;
     transform: scale(1.05);
   }
+
+  .logo a:hover {
+    color: #FF8C42;
+  }
+  
   
   
 
