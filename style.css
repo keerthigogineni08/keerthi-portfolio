@@ -344,6 +344,14 @@
     margin-top: 2rem;
   }
   
+  .section {
+    padding: 5rem 0;
+    border-bottom: 1px solid #bbb;
+  }
+  .section:last-of-type {
+    border-bottom: none;
+  }
+  
   
   /* CTA */
   .cta {
