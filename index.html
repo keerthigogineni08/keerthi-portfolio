@@ -3,149 +3,272 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Keerthi Gogineni | Portfolio</title>
+  <title>About | Keerthi Gogineni</title>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+        font-family: 'Manrope', sans-serif;
+        background-color: #FFF8F3;
+        color: #111;
+        line-height: 1.6;
+        padding: 0;
+    }
+    .section {
+      padding: 5rem 0;
+      border-bottom: 1px solid #bbb; /* darker divider */
+    }
+    .section:last-of-type {
+      border: none;
+    }
+    .section-title {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      font-weight: 800;
+    }
+    .section-subtext {
+      max-width: 700px;
+      font-size: 1.1rem;
+      color: #444;
+      line-height: 1.8;
+    }
+    .two-col {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      gap: 3rem;
+    }
+    .about-avatar {
+      max-width: 420px;
+      max-height: 440px;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      aspect-ratio: 1 / 1;
+      border-radius: 20px;
+      flex: 0 0 30%;
+    }
+    .two-col .text-col {
+      flex: 1;
+      min-width: 300px;
+    }
+    .highlight-tag {
+      background-color: #f5d6c6;
+      color: #111;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 0.4rem 0.9rem;
+      border-radius: 999px;
+      display: inline-block;
+      margin-bottom: 1rem;
+    }
+    .experience-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+    .exp-card {
+        background-color: #fff8f3;
+        border: 2px solid #111;
+        border-radius: 24px;
+        padding: 2rem;
+        position: relative;
+        font-size: 1rem;
+        line-height: 1.7;
+        color: #111;
+        transition: all 0.3s ease;
+        box-shadow: 6px 6px 0 #111; /* edgy, funky look */
+    }
+
+    .exp-card:hover {
+        background-color: #fff1e6;
+        transform: translate(-2px, -2px);
+        box-shadow: 8px 8px 0 #111;
+    }
+
+    .exp-card h4 {
+        font-size: 1.1rem;
+        font-weight: 800;
+        margin-bottom: 0.5rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .exp-card p {
+        color: #333;
+        font-weight: 500;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .gallery img {
+        width: 100%;
+        height: auto;
+        border-radius: 16px;
+        object-fit: contain;     /* ✅ No cutting */
+        aspect-ratio: unset;     /* ✅ Natural dimensions */
+        transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.03);
+    }
+    .cta-footer {
+      text-align: center;
+      padding: 5rem 0;
+    }
+    .cta-footer h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .cta-footer .button {
+      margin-top: 1rem;
+    }
+  </style>
 </head>
 <body>
-  <header class="navbar">
-    <div class="logo">
-      <a href="index.html" style="text-decoration: none; color: inherit;">Keerthi Gogineni</a>
-    </div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="works.html">Works</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+    <header class="navbar">
+        <div class="logo">
+          <a href="index.html" style="text-decoration: none; color: inherit;">Keerthi Gogineni</a>
+        </div>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="works.html">Works</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </header>
 
-  <!-- Hero Section -->
-  <section class="section hero fade-in">
+  <!-- Intro -->
+  <section class="section">
     <div class="container">
-      <div class="hero-text">
-        <h1>Data That Talks. Tools That Work. Built by Me.</h1>
-        <p>
-          Hey — I’m Keerthi! I turn complex data into clean, powerful systems. Whether it’s predicting WiFi disruptions, mapping Spotify moods, or building dashboards that actually make sense, I love making data feel human. Real projects. Real results. That’s the work I do.
-          
+        <div class="two-col">
+        <img src="assets/Keerthi.jpeg" alt="3D Avatar" class="about-avatar" />
+        <div class="text-col">
+            <div class="highlight-tag">ABOUT ME</div>
+            <h2 class="section-title about-intro-title">Built Across Labs, Startups & Real-World Systems</h2>
+            <p>
+                I'm Keerthi — a creatively-driven data scientist who’s worked across startups, research labs, and corporate teams. At AppLab Systems, I built predictive models and pipelines that made real impact — from boosting recommendation accuracy to optimizing database performance. At MSU’s biology lab, I turned over a million messy records into clean, insightful growth patterns using machine learning and visualization tools. And back at Varadhi Smartek? I helped architect the backend for a school system used by thousands, deploying scalable tools in the cloud before I even had a degree in hand.
+            </p>
+            <p>
+            Now, I build dashboards, deploy models, and run systems that work in the real world — not just in notebooks. Whether it’s NLP, ETL, or a clean UI, I care about making things useful, fast, and actually fun to work with.
+            </p>
+        </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- Tech Experience -->
+<section class="section">
+    <div class="container">
+        <div class="highlight-tag">TECH EXPERIENCE</div>
+        <div class="two-col" style="flex-direction: row-reverse;">
+        <img src="assets/women-mike.png" alt="Trophy Illustration" class="about-avatar" />
+        <div class="text-col">
+            <h2 class="section-title">Making data speak louder than words</h2>
+            <div class="experience-grid">
+            <div class="exp-card">
+                <h4>👩‍🏫 AppLab Systems — Data & ML in the Wild</h4>
+                <p>Built scalable ETL pipelines and AI models that predicted user behavior and drove product decisions — including a 15% boost in retention. Refactored messy SQL into clean, lightning-fast queries, and made big data feel a little less big.</p>
+            </div>
+            <div class="exp-card">
+                <h4>🌱 MSU Biology Lab — ML Meets Nature</h4>
+                <p>Processed 1M+ records of plant growth data using PCA, regression, and Python pipelines. Turned raw field measurements into insights that supported published research — and made biology a bit more computational along the way.</p>
+            </div>
+            <div class="exp-card">
+                <h4>⚡ General Motors — Real-Time Systems & Networks</h4>
+                <p>Designed a VR-based network monitoring tool using Unreal Engine, MySQL, and Wireshark — reducing debug time by 50%. Optimized data pipelines for 10,000+ nodes and got a crash course in building systems that actually scale.</p>
+            </div>
+            <div class="exp-card">
+                <h4>💡 Personal Projects — Where the Magic Happens</h4>
+                <p>From a mood-based music dashboard to a fake news detector and full-stack resume analyzer, my projects mix creativity with real engineering. I don’t just build for the portfolio — I build to learn, launch, and solve.</p>
+            </div>
+            </div> <!-- experience-grid -->
+        </div> <!-- inner text column -->
+        </div> <!-- two-col -->
+    </div>
+  </section>
+  
+
+  <!-- Leadership & Awards -->
+  <section class="section">
+    <div class="container">
+        <div class="highlight-tag">BEYOND THE RÉSUMÉ</div>
+        <div class="two-col" style="flex-direction: row-reverse;">
+        <img src="assets/awards-icon-trophy.png" alt="Trophy Illustration" class="about-avatar" />
+        <div class="text-col">
+            <h2 class="section-title">Leading, mentoring & thriving</h2>
+            <p class="section-subtext">
+            From student leadership to university honors — here’s a glimpse into the impact beyond projects.
+            </p>
+            <div class="exp-card">
+                <h4>🧮 Teaching Assistant & ULA – Funded by Teaching, Fueled by Passion</h4>
+                <p>My master’s degree was paid for because I taught — and that means something to me. I taught over 250 students across MTH and CMSE, graded relentlessly, hosted office hours that turned into mentoring sessions, and helped people understand concepts that once felt impossible. I earned my education by helping others earn theirs.</p>
+            </div>
+            <div class="experience-grid" style="margin-top: 2rem;">
+            <div class="exp-card">
+                <h4>👩‍💼 ACM President – 2+ Years of Leading with Impact</h4>
+                <p>I didn’t just host events — I helped build a space where tech felt accessible, fun, and meaningful. I ran meetings, led collaborations, mentored peers, and brought companies like Google and Microsoft to campus. We launched coding competitions, AI groups, and late-night debugging sessions. It wasn’t a title — it was a community, and I helped it thrive.</p>
+            </div>
+            <div class="exp-card">
+                <h4>🚀 Engineering Clubs – Rocketry, STARX, SWISE, AIAA</h4>
+                <p>From debugging code in sensor systems to wiring up parts of a robotic exosuit, I worked with teams who were building the future — quite literally. I learned to collaborate, contribute, and explore the edge of what tech can do, whether in aerospace, biomechanics, or embedded systems.</p>
+            </div>
+            <div class="exp-card">
+                <h4>📦 Startup Weekend & AmruthaShala – Building Things That Matter</h4>
+                <p>At Techstars Startup Weekend, I pitched a business idea that was voted one of the best — not just for the tech, but for the heart behind it. Later, I worked on AmruthaShala — a platform connecting home cooks to customers. React Native, Java, AWS — sure. But what I really built was a way to support community through food.</p>
+            </div>
+            </div>
+            <p class="section-subtext" style="margin-top: 2rem; font-style: italic;">
+                All of this — the teaching, the coding, the community — it’s not just “extra.”<br>
+                It’s what makes me <strong>me</strong>. ✨
+            </p>
+        </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- Fun Life Gallery -->
+  <section class="section">
+    <div class="container">
+        <div class="highlight-tag">WHEN I'M NOT GLUED TO MY SCREEN...</div>
+        <h2 class="section-title">I recharge with creativity + play</h2>
+        <p class="section-subtext" style="margin-bottom: 2rem;">
+            I’m probably sketching design ideas, obsessing over aesthetics, or thinking up quirky side projects I’ll definitely start and maybe finish. I love visual storytelling, world-building through games, and getting lost in graphic novels or anime that make you feel things. Creativity — the playful, messy kind — is how I recharge and come back stronger.
         </p>
-        <a class="button connect-btn" href="contact.html">🔗 Connect with me!</a>
-      </div>
-      <div class="hero-img">
-        <img src="assets/Astronaut_illustrator.png" alt="Astronaut Illustration" />
-      </div>
-    </div>
-  </section>
-
-  <!-- About Blurb -->
-  <section class="section about-blurb fade-in">
-    <div class="container">
-      <div class="about-icon">
-        <img src="assets/about_me.png" alt="About Me Illustration" />
-      </div>
-      <div class="about-text fade-in">
-        <span class="tag">ABOUT ME</span>
-        <h2>Built on Real Work. Backed by Real Experience.</h2>
-          <p>
-            I’ve worked across startups, labs, and industry — building machine learning models, streaming pipelines, and data systems that don’t just sit pretty, they *do the job*. I studied CS at MSU, but I learned the most on the job: predicting behavior at AppLab, visualizing networks at GM, and using AI to decode crop growth in a research lab. I care about clean systems, thoughtful design, and building tech that solves the right problems.
-          </p>
-        <div class="stats">
-          <div class="stat">
-            <div class="stat-number">5+ years</div>
-            <div class="stat-label">Skill Experience</div>
-          </div>
-          <div class="stat">
-            <div class="stat-number">10+</div>
-            <div class="stat-label">Projects</div>
-          </div>
-          <div class="stat">
-            <div class="stat-number">5+</div>
-            <div class="stat-label">Clients</div>
-          </div>
-          <div class="stat">
-            <div class="stat-number">54k+</div>
-            <div class="stat-label">Followers</div>
-          </div>
+        <div class="gallery">
+        <img src="assets/fun1.png" alt="Gaming" />
+        <img src="assets/fun2.png" alt="Comics" />
+        <img src="assets/fun3.png" alt="Anime" />
+        <img src="assets/fun4.png" alt="Gameboy" />
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Skills & Tools -->
-  <section class="section skills-showcase fade-in">
-    <div class="container">
-      <div class="skills-header">
-        <span class="tag">SKILLS & TOOLS</span>
-        <h2 class="section-title">What My Tools Would Say If They Had Mouths</h2>
-      </div>
-      <div class="skills-layout">
-        <div class="skills-sticky-img">
-          <img src="assets/skills-illustration.png" alt="Skills Illustration" />
-        </div>
-        <div class="skills-scroll">
-          <div class="skill-card theme-ai">
-            <p>Working with Keerthi? A dream. She fine-tuned me using TensorFlow, PyTorch, Keras, and Scikit-learn to build Spotify mood maps and WiFi prediction models.</p>
-            <span>
-              <img src="assets/person-icon.png" alt="Icon" />
-              <strong>Machine Learning & AI</strong>
-              <img src="assets/star-icon.png" class="end-icon" alt="Star" />
-            </span>
-          </div>
-          <div class="skill-card theme-analytics">
-            <p>Keerthi takes raw chaos and turns it into gold. With Pandas, NumPy, Tableau, and good ol’ regression, she wrangles data like a pro.</p>
-            <span>
-              <img src="assets/person-icon.png" alt="Icon" />
-              <strong>Data Analytics & Visualization</strong>
-              <img src="assets/star-icon.png" class="end-icon" alt="Star" />
-            </span>
-          </div>
-          <div class="skill-card theme-infra">
-            <p>I’m Spark, Kafka, Hadoop, and Docker — the big guys. Keerthi builds scalable pipelines with Kubernetes orchestration and CI/CD to seal the deal.</p>
-            <span>
-              <img src="assets/person-icon.png" alt="Icon" />
-              <strong>Big Data & Infrastructure</strong>
-              <img src="assets/star-icon.png" class="end-icon" alt="Star" />
-            </span>
-          </div>
-          <div class="skill-card theme-cloud">
-            <p>I live in the cloud, and Keerthi’s my architect. She handles AWS EC2, S3, Lambda, and DynamoDB like a breeze.</p>
-            <span>
-              <img src="assets/person-icon.png" alt="Icon" />
-              <strong>Cloud Platforms & Services</strong>
-              <img src="assets/star-icon.png" class="end-icon" alt="Star" />
-            </span>
-          </div>
-          <div class="skill-card theme-creative">
-            <p>She doesn’t just build models — she builds apps. Django, React Native, Flutter, HTML/CSS, APIs — she prototypes like a boss.</p>
-            <span>
-              <img src="assets/person-icon.png" alt="Icon" />
-              <strong>Creative Tech & Tools</strong>
-              <img src="assets/star-icon.png" class="end-icon" alt="Star" />
-            </span>
-          </div>
-        </div>
-      </div>
     </div>
   </section>
 
   <!-- CTA -->
 
-  <section class="cta-footer section fade-in">
+  <section class="cta-footer">
     <div class="container">
-      <div class="cta-container">
+        <div class="cta-container">
         <div class="cta-left">
-          <h2>Time to Shine!<br>Drop a line!</h2>
-          <a class="button" href="contact.html">📬 Let’s Connect</a>
-          <div class="socials-links">
+            <h2>Time to Shine!<br>Drop a line!</h2>
+            <a class="button" href="contact.html">📬 Let’s Connect</a>
+            <div class="socials-links">
             <a href="mailto:keerthichowdarygogineni@gmail.com" target="_blank">Email</a> /
             <a href="https://www.linkedin.com/in/keerthi-gogineni/" target="_blank">LinkedIn</a> /
             <a href="https://github.com/keerthigogineni08" target="_blank">GitHub</a>
-          </div>
+            <a href="assets/Keerthi_Resume.pdf" target="_blank">Resume</a>
+            </div>
         </div>
         <div class="cta-right">
-          <img src="assets/contact-illustration.png" alt="Call Illustration" />
+            <img src="assets/contact-illustration.png" alt="Call Illustration" />
         </div>
-      </div>
+        </div>
     </div>
   </section>
 </body>
