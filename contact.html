@@ -155,36 +155,40 @@
         </nav>
       </header>
 
-  <section class="contact-wrapper">
-    <div class="container">
-        <!-- Contact Info -->
-        <div class="contact-info">
-        <p><strong>Email:</strong> <a href="mailto:keerthichowdarygogineni@gmail.com">keerthichowdarygogineni@gmail.com</a></p>
-        <p><strong>Phone:</strong> <a href="tel:+15209912767">(520) 991-2767</a></p>
-        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/keerthi-gogineni/" target="_blank">keerthi-gogineni</a></p>
-        <p><strong>GitHub:</strong> <a href="https://github.com/keerthigogineni08" target="_blank">keerthigogineni08</a></p>
-        <img src="assets/mailbox_character.png" alt="Contact Illustration" />
+      <section class="contact-wrapper">
+        <div class="container two-col">
+          <!-- Left Column: Info + Image -->
+          <div class="contact-left">
+            <div class="contact-info">
+              <p><strong>Email:</strong> <a href="mailto:keerthichowdarygogineni@gmail.com">keerthichowdarygogineni@gmail.com</a></p>
+              <p><strong>Phone:</strong> <a href="tel:+15209912767">(520) 991-2767</a></p>
+              <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/keerthi-gogineni/" target="_blank">keerthi-gogineni</a></p>
+              <p><strong>GitHub:</strong> <a href="https://github.com/keerthigogineni08" target="_blank">keerthigogineni08</a></p>
+            </div>
+            <img src="assets/mailbox_character.png" alt="Contact Illustration" class="contact-img" />
+          </div>
+      
+          <!-- Right Column: Contact Form -->
+          <form class="contact-form" name="contact" method="POST" netlify>
+            <input type="hidden" name="form-name" value="contact" />
+            <h2>I would love to hear from you!</h2>
+            <p>Whether you have a question, want to inquire about my projects, or just want to say hello — feel free to reach out to me below. Or send me an email!</p>
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
         </div>
-
-        <!-- Contact Form -->
-        <form class="contact-form" name="contact" method="POST" netlify>
-            <input type="hidden" name="form-name" value="contact" />   
-        <h2>I would love to hear from you!</h2>
-        <p>Whether you have a question, want to inquire about my projects, or just want to say hello — feel free to reach out to me below. Or send me an email!</p>
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-        </form>
-
-        <div class="thank-you" style="display: none; margin-top: 3rem;">
+      
+        <!-- Thank You Message -->
+        <div class="container">
+          <div class="thank-you" style="display: none; margin-top: 3rem;">
             <p style="font-size: 1.2rem; font-weight: 600; color: #008b4c;">
-            ✅ Thanks for your message! I’ll get back to you soon. 🧡
+              ✅ Thanks for your message! I’ll get back to you soon. 🧡
             </p>
+          </div>
         </div>
-    </div>
-
-  </section>
+      </section>
 
   <script>
     const form = document.querySelector("form");

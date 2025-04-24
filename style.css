@@ -456,6 +456,22 @@
     color: #555;
     margin-top: 0.5rem;
   }
+
+  .section-title {
+    position: relative;
+    text-align: center;
+  }
+  
+  .section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #FF8C42;
+    margin: 1rem auto 0 auto;
+    border-radius: 2px;
+  }
+  
   
   .skills-section {
     margin: 6rem 0;
@@ -610,6 +626,22 @@
   .contact-layout {
     align-items: center;
   }
+
+  .contact-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  
+  .contact-img {
+    margin-top: 2rem;
+    max-width: 300px;
+    height: auto;
+    object-fit: contain;
+  }
+  
   
   .contact-info {
     flex: 1;
@@ -802,6 +834,15 @@
     
     .logo {
         font-size: 1.4rem;
+    }
+
+    .contact-left {
+        align-items: center;
+        text-align: center;
+    }
+    
+    .contact-img {
+        max-width: 200px;
     }
 
     .cta-container {
