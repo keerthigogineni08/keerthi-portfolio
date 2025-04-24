@@ -167,7 +167,8 @@
     </div>
 
     <!-- Contact Form -->
-    <form class="contact-form">
+    <form class="contact-form" name="contact" method="POST" netlify>
+        <input type="hidden" name="form-name" value="contact" />   
       <h2>I would love to hear from you!</h2>
       <p>Whether you have a question, want to inquire about my projects, or just want to say hello — feel free to reach out to me below. Or send me an email!</p>
       <input type="text" name="name" placeholder="Your Name" required />
@@ -175,6 +176,26 @@
       <textarea name="message" placeholder="Your Message" required></textarea>
       <button type="submit">Send Message</button>
     </form>
+
+    <div class="thank-you" style="display: none; margin-top: 3rem;">
+        <p style="font-size: 1.2rem; font-weight: 600; color: #008b4c;">
+          ✅ Thanks for your message! I’ll get back to you soon. 🧡
+        </p>
+    </div>
+
   </section>
+
+  <script>
+    const form = document.querySelector("form");
+    const thankYou = document.querySelector(".thank-you");
+  
+    form.addEventListener("submit", (e) => {
+      setTimeout(() => {
+        form.style.display = "none";
+        thankYou.style.display = "block";
+      }, 200); // small delay to give Netlify time to process
+    });
+  </script>
+  
 </body>
 </html>
