@@ -91,6 +91,67 @@
     font-size: 1.1rem;
     margin-bottom: 1.5rem;
   }
+
+  .hero-alt {
+    padding: 5rem 0 6rem;
+  }
+  
+  .hero-flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+  }
+  
+  .hero-left {
+    flex: 1;
+    min-width: 280px;
+  }
+  
+  .hero-left h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+  }
+  
+  .hero-left p {
+    font-size: 1.15rem;
+    line-height: 1.75;
+    margin-bottom: 2rem;
+    color: #333;
+  }
+  
+  .hero-right {
+    flex: 1;
+    min-width: 280px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .hero-right img {
+    max-width: 400px;
+    height: auto;
+    object-fit: contain;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .hero-flex {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .hero-left h1 {
+      font-size: 2.4rem;
+    }
+  
+    .hero-right img {
+      max-width: 280px;
+    }
+  }
+  
   
   .button {
     padding: 0.8rem 1.6rem;
