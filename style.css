@@ -784,6 +784,43 @@
     background-color: #FF8C42;
     color: #fff;
   }
+
+  .about-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+    flex-wrap: wrap;
+  }
+  
+  .about-img {
+    flex: 1;
+    min-width: 280px;
+  }
+  
+  .about-img img {
+    max-width: 360px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  
+  .about-text {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  @media (max-width: 768px) {
+    .about-flex {
+      flex-direction: column;
+      text-align: center;
+    }
+    .about-img img {
+      max-width: 240px;
+      margin-bottom: 2rem;
+    }
+  }
+  
   
 
   /* Animation Utility Classes */
