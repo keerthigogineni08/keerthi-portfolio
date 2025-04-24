@@ -65,14 +65,13 @@
   }
   
   .hero-text {
-    flex: 1.2;
+    flex: 1;
     min-width: 300px;
-    max-width: 600px;
+    max-width: none;
   }
-  
   .hero-img {
-    flex: 0.8;
-    max-width: 380px;
+    flex: 0 0 320px;
+    max-width: none;
     margin: 0 auto;
   }
   
