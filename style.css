@@ -71,7 +71,7 @@
   }
   .hero-img {
     flex: 0 0 320px;
-    max-width: none;
+    max-width: 380px;
     margin: 0 auto;
   }
   
