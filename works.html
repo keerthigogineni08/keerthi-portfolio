@@ -6,24 +6,119 @@
   <title>Works | Keerthi Gogineni</title>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .works {
+      background-color: #fff8f3;
+      padding: 5rem 0;
+    }
+    .works-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    .works-header p {
+      max-width: 700px;
+      margin: 1rem auto 2rem;
+      color: #555;
+      font-size: 1.1rem;
+    }
+    .works-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2.5rem;
+      padding: 0 2rem;
+    }
+    .work-card {
+      background-color: white;
+      border-radius: 20px;
+      box-shadow: 4px 4px 0 #111;
+      padding: 1.5rem;
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .work-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 6px 6px 0 #ff8c42;
+    }
+    .work-card img {
+      width: 100%;
+      border-radius: 12px;
+    }
+    .work-info {
+      text-align: center;
+    }
+    .work-info h3 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-bottom: 0.3rem;
+    }
+    .work-info span {
+      display: block;
+      font-size: 0.95rem;
+      color: #555;
+    }
+    .work-tags {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .work-tags .button.small {
+      font-size: 0.9rem;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      background-color: #111;
+      color: white;
+    }
+    .work-tags .button.small:hover {
+      background-color: #ff8c42;
+    }
+    .status.live {
+      background-color: #d4f8e8;
+      color: #008b4c;
+      padding: 0.3rem 0.75rem;
+      border-radius: 999px;
+      font-weight: bold;
+    }
+    .status.complete {
+      background-color: #e6f0ff;
+      color: #0044cc;
+      padding: 0.3rem 0.75rem;
+      border-radius: 999px;
+      font-weight: bold;
+    }
+    .status.progress {
+      background-color: #fff5e5;
+      color: #d17f00;
+      padding: 0.3rem 0.75rem;
+      border-radius: 999px;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
-    <header class="navbar">
-        <div class="logo">
-          <a href="index.html" style="text-decoration: none; color: inherit;">Keerthi Gogineni</a>
-        </div>
-        <nav>
-          <a href="index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="works.html">Works</a>
-          <a href="contact.html">Contact</a>
-        </nav>
-      </header>
+  <header class="navbar">
+    <div class="logo">
+      <a href="index.html" style="text-decoration: none; color: inherit;">Keerthi Gogineni</a>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="works.html">Works</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-  <section class="works">
+  <!-- Project Showcase -->
+  <section class="works fade-in">
     <div class="works-header">
       <span class="tag">WORKS</span>
-      <h2>Project Showcase</h2>
+      <h2 class="section-title">Project Showcase</h2>
+      <p>Here’s a selection of some of my favorite and most impactful projects. Click through to explore live apps, dashboards, or open-source code.</p>
     </div>
     <div class="works-grid">
       <div class="work-card">
@@ -37,6 +132,7 @@
           </div>
         </div>
       </div>
+
       <div class="work-card">
         <img src="assets/spotify-dashboard-cover.png" alt="Spotify Dashboard" />
         <div class="work-info">
@@ -48,6 +144,7 @@
           </div>
         </div>
       </div>
+
       <div class="work-card">
         <img src="assets/Fake-news-detection-cover.png" alt="Fake News Detector" />
         <div class="work-info">
@@ -59,6 +156,7 @@
           </div>
         </div>
       </div>
+
       <div class="work-card">
         <img src="assets/project4.png" alt="Resume Analyzer" />
         <div class="work-info">
@@ -72,10 +170,11 @@
     </div>
   </section>
 
-  <section class="works">
+  <!-- Coming Soon -->
+  <section class="works fade-in">
     <div class="works-header">
       <span class="tag">COMING SOON</span>
-      <h2>Fresh Ideas Underway</h2>
+      <h2 class="section-title">Fresh Ideas Underway</h2>
     </div>
     <div class="works-grid">
       <div class="work-card">
@@ -96,9 +195,10 @@
     </div>
   </section>
 
+  <!-- CTA -->
   <section class="cta fade-in">
     <h2>Time to Shine! Drop a line!</h2>
-    <a class="button" href="contact.html">🧡 Contact Me</a>
+    <a class="button" href="contact.html">📬 Contact Me</a>
     <div class="socials">Instagram / LinkedIn / Twitter</div>
     <div class="cta-img">
       <img src="assets/contact-illustration.png" alt="Call Illustration" style="width: 240px; max-width: 100%; margin-top: 2rem;" />
