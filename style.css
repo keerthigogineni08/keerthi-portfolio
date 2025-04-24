@@ -352,6 +352,10 @@
     border-bottom: none;
   }
   
+  .two-col {
+    align-items: flex-start;
+  }
+  
   
   /* CTA */
   .cta {
